@@ -6,7 +6,6 @@ export default function Modal({children}:{children:ReactNode}) {
 	const {showModal}=useGymStore()
 	return (
 		<section className={styles.container} >
-				
 				<div className={styles.bodyModal}>
 					<div className={styles.containerButtonClose}>
 						<button title='close' className={styles.buttonClose} onClick={()=>showModal()}>

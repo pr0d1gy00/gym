@@ -2,7 +2,7 @@ import { useSidebarData } from '../../../hooks/useSidebarData';
 import Item from './Item';
 import styles from '../styles/Header.module.css'
 import { useState } from 'react';
-import icon from '../../../assets/candado.webp'
+import LogoIcon from '../../../assets/SistemaGym.png'
 import { useScreenSize } from '../../../hooks/useScreenSize';
 import { NavLink } from 'react-router-dom';
 
@@ -17,8 +17,9 @@ export default function Header() {
     return (
         <header className={styles.header} >
 			{width >1099 &&(
-				<div>
-					<img src={icon} alt="" />
+				<div className={styles.containerLogo}>
+					<img src={LogoIcon} alt="" />
+					<h2>Gym</h2>
 				</div>
 			)}
 			<div className={styles.actions}>
