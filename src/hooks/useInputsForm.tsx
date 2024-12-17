@@ -3,6 +3,7 @@ import NameIcon from '../assets/negocio.webp'
 import MailIcon from '../assets/correo (1).webp'
 import UserIcon from '../assets/avatar.webp'
 import PasswordIcon from '../assets/candado.webp'
+import RoutineIcon from '../assets/rutina-de-ejercicio.webp'
 export type InputsFormProps={
 	id:string
 	name:string
@@ -54,10 +55,26 @@ const repeatPassword:InputsFormProps={
 	placeholder:'********'
 
 }
+const imageRoutine:InputsFormProps={
+	id:'imageRoutine',
+	name:'Cargar una imagen',
+	icon:RoutineIcon,
+	type:'file',
+	placeholder:''
+}
+const nameRoutine:InputsFormProps={
+	id:'name',
+	name:'Nombre de la rutina',
+	icon:NameIcon,
+	type:'text',
+	placeholder:'Rutina biceps destructora'
+	
+}
 
 export const  useInputsForm=()=>{
 	const [inputsForm,setInputsForm]=useState<InputsFormProps[]>([])
 	const [inputsLoginForm,setInputsLoginForm]=useState<InputsFormProps[]>([])
+	const [inputsRegisterRoutine,setInputsRegisterForm]=useState<InputsFormProps[]>([])
 	useEffect(()=>{
 		setInputsForm(()=>[
 			name,
@@ -71,10 +88,15 @@ export const  useInputsForm=()=>{
 			nameUser,
 			repeatPassword	
 		])
+		setInputsRegisterForm(()=>[
+			nameRoutine,
+			imageRoutine	
+		])
 	},[])
 	
 	return{
 		inputsForm,
-		inputsLoginForm
+		inputsLoginForm,
+		inputsRegisterRoutine
 	}
 }

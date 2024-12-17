@@ -8,3 +8,26 @@
 	font-weight: 700;
 	margin-top: 2rem;
 }
+
+/**********  STYLES BUTTON ADD ROUTINE *****************/
+.buttonAddRoutine{
+	position: absolute;
+	top: 70%;
+	left: 70%;
+	width: 8rem;
+	height: 8rem;
+	border: none;
+	background-color: var(--primary);
+	border-radius: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/**********  END STYLES BUTTON ADD ROUTINE *****************/
+@media (width>768px) { 
+	.buttonAddRoutine{
+		left: 90%;
+		top: 90%;
+	}
+}

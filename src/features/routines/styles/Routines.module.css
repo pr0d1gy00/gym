@@ -1,0 +1,21 @@
+/******** STYLE MODAL ADD ROUTINE*********/
+.title{
+	z-index: 11;
+	margin-bottom: 2rem;
+	text-align: center;
+	font-family: "Roboto",sans-serif;
+	
+}
+.nameImageForm{
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+
+}
+.nameImageForm img{
+	width: 3rem;
+}
+p{
+	font-family: 'Raleway',sans-serif;
+	font-weight: 500;
+}
