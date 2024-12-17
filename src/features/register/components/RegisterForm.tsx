@@ -1,6 +1,7 @@
 import Input from '../../../shared/input/components/Input'
 import styles from '../styles/Register.module.css'
 import { useInputsForm } from '../../../hooks/useInputsForm'
+import ButtonForm from '../../../shared/buttons/components/ButtonForm'
 export default function RegisterForm() {
 	const {inputsForm}=useInputsForm()
 
@@ -20,7 +21,7 @@ export default function RegisterForm() {
 				)
 
 				}
-				<button className={styles.buttonSend}>Registrarme</button>
+				<ButtonForm text={'Registrarme'} type={'submit'} title={'register'}/>
 			</form>
 		</section>
 	)

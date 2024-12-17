@@ -57,9 +57,9 @@ const repeatPassword:InputsFormProps={
 
 export const  useInputsForm=()=>{
 	const [inputsForm,setInputsForm]=useState<InputsFormProps[]>([])
-
+	const [inputsLoginForm,setInputsLoginForm]=useState<InputsFormProps[]>([])
 	useEffect(()=>{
-		return setInputsForm(()=>[
+		setInputsForm(()=>[
 			name,
 			surname,
 			mail,
@@ -67,9 +67,14 @@ export const  useInputsForm=()=>{
 			password,
 			repeatPassword
 		])
+		setInputsLoginForm(()=>[
+			nameUser,
+			repeatPassword	
+		])
 	},[])
 	
 	return{
-		inputsForm
+		inputsForm,
+		inputsLoginForm
 	}
 }
