@@ -17,6 +17,7 @@
 
 .itemHeader{
 	width: 3rem;
+	background-color: var(--white);
 	align-items: center;
 	font-family: 'Raleway',sans-serif;
 	font-weight: 500;
@@ -25,8 +26,11 @@
 	align-items: center;
 	flex-direction: column;
 	margin-right: 3rem;
+	border: none;
 }
 .Home{
+	border: none;
+
 	border-bottom: 2px solid var(--primary);
 	width: 3rem;
 	align-items: center;
@@ -36,6 +40,8 @@
 	align-items: center;
 	flex-direction: column;
 	margin-right: 2rem;
+	background-color: var(--white);
+
 
 }
 
@@ -44,6 +50,7 @@
 	object-fit: cover;
 }
 .Routines{
+	border: none;
 	border-bottom: 2px solid var(--primary);
 	width: 3rem;
 	align-items: center;
@@ -53,9 +60,11 @@
 	align-items: center;
 	flex-direction: column;
 	margin-right: 2rem;
+	background-color: var(--white);
 
 }
 .Forum{
+	border: none;
 	border-bottom: 2px solid var(--primary);
 	width: 3rem;
 	align-items: center;
@@ -65,6 +74,7 @@
 	align-items: center;
 	flex-direction: column;
 	margin-right: 2rem;
+	background-color: var(--white);
 
 }
 .actions{
@@ -83,6 +93,11 @@
 	display: flex;
 	align-items: center;
 	gap: 1rem;
+}
+a{
+	text-decoration: none;
+	border: none;
+	background-color: var(--white);
 }
 .buttonLogin{
 	width: 15rem;

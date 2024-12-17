@@ -12,13 +12,13 @@ export default function LoginForm() {
 			<form className={styles.loginForm}>
 				{
 					inputsLoginForm.map(input=>
-						<>
-							<div className={styles.nameImageForm}>
+						<div key={input.id}>
+							<div className={styles.nameImageForm} key={input.id}>
 								<img src={input.icon} alt={input.id} />
 								<p>{input.name}</p>
 							</div>
 							<Input type={input.type} required placeholder={input.placeholder} title={input.id} id={input.id} name={input.name} />
-						</>
+						</div>
 					)
 				}
 			<ButtonForm text={'Iniciar sesion'} type={'submit'} title={'login'}/>	

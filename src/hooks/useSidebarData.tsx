@@ -10,7 +10,7 @@ export type ActionsDataProps={
 
 const home:ActionsDataProps={
 	icon:HomeIcon,
-	path:"home",
+	path:"/",
 	title:"Home"
 }
 const routine:ActionsDataProps={
