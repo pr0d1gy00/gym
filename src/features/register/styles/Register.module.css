@@ -1,6 +1,8 @@
 .container{
+	background-color: var(--white);
 	width: 100%;
 	height: 100vh;
+	padding: 2rem;
 }
 .registerForm{
 	margin: 0 auto;
@@ -11,7 +13,7 @@
 	-moz-box-shadow: 10px 10px 22px -7px rgba(0,0,0,0.75);
 	box-shadow: 10px 10px 22px -7px rgba(0,0,0,0.75);
 	height: auto;
-	background-color: transparent;
+	background-color: var(--white);
 }
 p{
 	font-family: 'Raleway',sans-serif;
@@ -35,14 +37,7 @@ span{
 .nameImageForm img{
 	width: 3rem;
 }
-@media (width>1100px) { 
-	.container{
-		margin: 0 auto;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-	
+@media (width>1100px) { 	
 	.registerForm{
 		display: flex;
 		flex-direction: column;

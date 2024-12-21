@@ -1,14 +1,17 @@
 import { useInputsForm } from '../../../hooks/useInputsForm'
+import { useScreenSize } from '../../../hooks/useScreenSize'
 import ButtonForm from '../../../shared/buttons/components/ButtonForm'
 import Input from '../../../shared/input/components/Input'
 import styles from '../styles/Login.module.css'
 
 export default function LoginForm() {
 	const {inputsLoginForm}=useInputsForm()
-
+	const {width}=useScreenSize()
 	return (
 		<section className={styles.container}>
-			<h2>Ingresa a tu vida <span>Fitness</span></h2>
+			{width > 900 ? <h2>Ingresa a tu vida <span>Fitness</span></h2> : null }
+
+			
 			<form className={styles.loginForm}>
 				{
 					inputsLoginForm.map(input=>

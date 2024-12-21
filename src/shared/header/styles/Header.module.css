@@ -3,7 +3,6 @@
 	width: 100%;
 	max-height: 6rem;
 	display: flex;
-	justify-content: center;
 	gap: 1rem;
 	background-color: var(--white);
 	font-family: 'Raleway',sans-serif;
@@ -27,6 +26,7 @@
 	margin-right: 3rem;
 	border: none;
 }
+
 .Home{
 	border: none;
 
@@ -87,6 +87,8 @@
 }
 .actions{
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	gap: 2rem;
 }
 .Forum img{
@@ -130,6 +132,17 @@ a{
 @media (width>1100px) { 
 	.header{
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
+	}
+	.header div{
+		width: 40rem;
+		display: flex;
+		justify-content: center;
+		align-self: center;
+	}
+	.itemHeader:hover{
+		background-color: #e5e5e5;
+		border-radius: 100%;
+		width: 4rem;
 	}
 }
