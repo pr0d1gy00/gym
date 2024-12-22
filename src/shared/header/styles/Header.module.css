@@ -3,16 +3,15 @@
 	width: 100%;
 	max-height: 6rem;
 	display: flex;
+	justify-content: center;
 	gap: 1rem;
 	background-color: var(--white);
 	font-family: 'Raleway',sans-serif;
-
 }
 .itemHeader img{
 	width: 2rem;
 	object-fit: cover;
 }
-
 .itemHeader{
 	width: 3rem;
 	background-color: var(--white);
@@ -26,10 +25,8 @@
 	margin-right: 3rem;
 	border: none;
 }
-
 .Home{
 	border: none;
-
 	border-bottom: 2px solid var(--primary);
 	width: 3rem;
 	align-items: center;
@@ -40,10 +37,7 @@
 	flex-direction: column;
 	margin-right: 2rem;
 	background-color: var(--white);
-
-
 }
-
 .Home img{
 	width: 2rem;
 	object-fit: cover;
@@ -83,7 +77,6 @@
 	flex-direction: column;
 	margin-right: 2rem;
 	background-color: var(--white);
-
 }
 .actions{
 	display: flex;
@@ -135,10 +128,9 @@ a{
 		justify-content: space-around;
 	}
 	.header div{
-		width: 40rem;
 		display: flex;
 		justify-content: center;
-		align-self: center;
+		align-items: center;
 	}
 	.itemHeader:hover{
 		background-color: #e5e5e5;
