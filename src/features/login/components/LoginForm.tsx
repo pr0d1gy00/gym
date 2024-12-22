@@ -6,12 +6,10 @@ import styles from '../styles/Login.module.css'
 
 export default function LoginForm() {
 	const {inputsLoginForm}=useInputsForm()
-	const {width}=useScreenSize()
 	return (
 		<section className={styles.container}>
-			{width > 900 ? <h2>Ingresa a tu vida <span>Fitness</span></h2> : null }
+			<h2>Ingresa a tu vida <span>Fitness</span></h2>
 
-			
 			<form className={styles.loginForm}>
 				{
 					inputsLoginForm.map(input=>

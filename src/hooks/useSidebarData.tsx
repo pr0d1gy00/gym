@@ -15,12 +15,12 @@ const home:ActionsDataProps={
 }
 const routine:ActionsDataProps={
 	icon:RoutineIcon,
-	path:"routines",
+	path:"/routines",
 	title:"Routines"
 }
 const forum:ActionsDataProps={
 	icon:ForumIcon,
-	path:'forum',
+	path:'/forum',
 	title:'Forum'
 }
 export const useSidebarData=()=>{
