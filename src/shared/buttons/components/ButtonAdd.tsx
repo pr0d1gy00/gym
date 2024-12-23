@@ -1,11 +1,12 @@
 import styles from '../styles/Button.module.css'
 import AddIcon from '../../../assets/agregar.png'
 import { useGymStore } from '../../../store/store'
-export default function ButtonAddRoutine() {
+export default function ButtonAdd() {
 	const {showModal}=useGymStore()
+	console.log(navigator.userAgent)
 	return (
-		<button className={styles.buttonAddRoutine} onClick={()=>showModal()}>
-			<img src={AddIcon} alt="addRoutine" />
+		<button className={styles.buttonAdd} onClick={()=>showModal()}>
+			<img src={AddIcon} alt="add" />
 		</button>
 	)
 }

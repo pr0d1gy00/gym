@@ -1,8 +1,8 @@
 import styles from "../styles/Forum.module.css";
-import LikeIcon from '../../../assets/corazon.png'
-import LikeFilledIcon from '../../../assets/corazonLleno.png'
+
 import { useEffect, useState } from "react";
 import Like from "../../../shared/animation/Like";
+import ButtonLike from "../../../shared/buttons/components/ButtonLike";
 type PostProps = {
 	title: string;
 	image: string;
@@ -24,7 +24,6 @@ export default function Post({
 	useEffect(()=>{
 		setTimeout(()=>setShowAnimation(false),2000)
 	},[showAnimation])
-	console.log(showAnimation)
 	return (
 		<div className={styles.post}>
 			<div className={styles.image}>
@@ -37,16 +36,7 @@ export default function Post({
 				{showAnimation && <Like/>}
 				<div className={styles.likeContainer}>
 					<div>
-						<button title="like" 
-						onClick={()=>{
-							
-							setLike(!like)
-							setShowAnimation(!like) 
-						}}
-							className={styles.like}
-						>
-							<img src={like ? LikeFilledIcon : LikeIcon } alt="" />
-						</button>
+						<ButtonLike like={like} setShowAnimation={setShowAnimation} setLike={setLike}/>
 						<p>123k</p>
 					</div>
 					<p className={styles.replies}>replies {reply}</p>

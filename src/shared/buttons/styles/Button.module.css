@@ -10,9 +10,9 @@
 }
 
 /**********  STYLES BUTTON ADD ROUTINE *****************/
-.buttonAddRoutine{
-	position: absolute;
-	top: 90%;
+.buttonAdd{
+	position: fixed;
+	top: 80%;
 	left: 70%;
 	width: 8rem;
 	height: 8rem;
@@ -22,6 +22,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	scroll-behavior:smooth;
 }
 /**********  STYLES BUTTON FILTER POST *****************/
 
@@ -39,10 +40,24 @@
 	justify-content: center;
 	font-weight: 700;
 }
+/**********  STYLES BUTTON LIKE  *****************/
 
+.like{
+	background-color: transparent;
+	width: 3rem;
+	height: 3rem;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.like img{
+	width: 3rem;
+	max-width: 3rem;
+}
 /**********  END STYLES BUTTON ADD ROUTINE *****************/
 @media (width>768px) { 
-	.buttonAddRoutine{
+	.buttonAdd{
 		left: 90%;
 		top: 90%;
 	}

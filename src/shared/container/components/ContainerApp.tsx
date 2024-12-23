@@ -2,7 +2,7 @@ import Header from '../../header/components/Header'
 import '../../../index.css'
 import { Outlet } from 'react-router'
 import { useGymStore } from '../../../store/store'
-import ButtonAddRoutine from '../../buttons/components/ButtonAddRoutine'
+import ButtonAdd from '../../buttons/components/ButtonAdd'
 import ModalAddRoutine from '../../../features/routines/components/ModalAddRoutine'
 export default function ContainerApp() {
 	const {modal}=useGymStore()
@@ -11,7 +11,7 @@ export default function ContainerApp() {
 			<Header/>	
 			<section className="containerLayout">
 				<Outlet/>
-				{!modal && <ButtonAddRoutine/>}
+				{!modal && <ButtonAdd/>}
 				{modal && <ModalAddRoutine/>}
 			</section>
 		</div>

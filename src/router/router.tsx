@@ -3,6 +3,7 @@ import ContainerApp from "../shared/container/components/ContainerApp";
 import LoginForm from "../features/login/components/LoginForm";
 import RegisterForm from "../features/register/components/RegisterForm";
 import Forum from "../features/forum/components/Forum";
+import Routines from "../features/routines/components/Routines";
 
 export const router = createBrowserRouter([
 
@@ -11,7 +12,8 @@ export const router = createBrowserRouter([
 		children:[
 			{path:'/login',element:<LoginForm/>},
 			{path:'/register',element:<RegisterForm/>},
-			{path:'/forum',element:<Forum/>}
+			{path:'/forum',element:<Forum/>},
+			{path:'/routines',element:<Routines/>}
 		]
 	}
 ])

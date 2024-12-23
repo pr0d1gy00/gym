@@ -20,3 +20,130 @@ p{
 	font-family: 'Raleway',sans-serif;
 	font-weight: 500;
 }
+
+/******** STYLE CARDROUTINE*********/
+
+.card{
+	width: 90%;
+	min-height: 20rem;
+	max-height: 35rem;
+	background-color: var(--white);
+	border-radius: 1rem;
+	overflow: hidden;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	-webkit-box-shadow: 3px 3px 17px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 17px -9px rgba(0,0,0,0.75);
+box-shadow: 3px 3px 17px -9px rgba(0,0,0,0.75);
+}
+.cardInfo{
+	padding: 1rem
+}
+.cardImage{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+.cardGradient{
+	width: 100%;
+	height: 100%;
+	background:linear-gradient(rgba(92, 92, 92, 0.5),transparent,transparent);
+	position: absolute;
+}
+.cardImage img{
+	width: 100%;
+	height: 20rem;
+	object-fit: cover;
+
+}
+p span{
+	color: #000000;
+	font-size: 2rem;
+	font-weight: bold;
+}
+.cardInfoText{
+	padding: 0.5rem 0;
+	max-height: 6.5rem;
+	min-height: 6.5rem ;
+	overflow: hidden;
+}
+.cardRoutineExecises{
+	padding: 0.5rem 0 0.5rem 0;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid #e5e5e5
+}
+.cardRoutineExecises p{
+	display: flex;
+	align-items: center;
+	gap:1rem;
+	font-weight: bold;
+	font-size: 1.8rem;
+}
+.cardRoutineExecises img{
+	width: 3rem;
+	height: 3rem;
+}
+/***********  styles routine   *********************/
+h2{
+	margin-top: 2rem;
+	text-align: center;
+	font-family: "Roboto",sans-serif;
+	width: 90%;
+}
+.container{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #f9f9f9;
+}
+.containerRoutines{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: transparent;
+}
+@media (width > 768px) { 
+	.containerRoutines{
+		display: grid;
+		width: 80%;
+		grid-template-columns: repeat(2,1fr);
+		align-items: normal;
+		justify-items: center;
+	}
+}
+@media (width > 968px) { 
+	.containerRoutines{
+		display: grid;
+		width: 90%;
+		grid-template-columns: repeat(3,1fr);
+		align-items: center;
+		justify-items: center;
+	}
+	.card{
+		max-width: 90%;
+		min-width: 90%;
+	}
+}
+@media (width > 1200px){
+	.containerRoutines{
+		display: grid;
+		width: 80%;
+		grid-template-columns: repeat(3,1fr);
+		align-items: center;
+		justify-items: center;
+	}
+	.card{
+		max-width: 90%;
+		min-width: 90%;
+	}
+}
