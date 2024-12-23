@@ -7,9 +7,12 @@ type GymState={
 }
 
 export const useGymStore=create<GymState>()(
+
+
 	devtools((set)=>({
 		modal:false,
-			showModal:() =>set((state)=>({
+			showModal:() => 
+				set((state)=>({
 				...state,
 				modal:!state.modal
 			}))
