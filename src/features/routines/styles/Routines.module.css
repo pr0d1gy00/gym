@@ -99,7 +99,7 @@ h2{
 }
 .container{
 	width: 100%;
-	height: auto;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -112,7 +112,7 @@ h2{
 	justify-items: center;
 	align-items: center;
 	gap: 1rem;
-	grid-template-columns: repeat(auto-fill,minmax(32rem,1fr));
+	grid-template-columns: repeat(auto-fill,minmax(min(100%,32rem),1fr));
 	background-color: transparent;
 }
 
@@ -120,7 +120,5 @@ h2{
 @media (width > 1200px){
 	.containerRoutines{
 		width: 60%;
-		height: 100vh;
-
 	}
 }

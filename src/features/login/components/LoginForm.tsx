@@ -1,13 +1,13 @@
 import { useInputsForm } from '../../../hooks/useInputsForm'
-import { useScreenSize } from '../../../hooks/useScreenSize'
 import ButtonForm from '../../../shared/buttons/components/ButtonForm'
 import Input from '../../../shared/input/components/Input'
 import styles from '../styles/Login.module.css'
-
+import HomeIcon from '../../../assets/InicioGym.webp'
 export default function LoginForm() {
 	const {inputsLoginForm}=useInputsForm()
 	return (
 		<section className={styles.container}>
+			<img src={HomeIcon} alt="iniciogym" />
 			<h2>Ingresa a tu vida <span>Fitness</span></h2>
 
 			<form className={styles.loginForm}>
@@ -24,6 +24,7 @@ export default function LoginForm() {
 				}
 			<ButtonForm text={'Iniciar sesion'} type={'submit'} title={'login'}/>	
 			</form>
+			
 		</section>
 	)
 }

@@ -1,10 +1,17 @@
 import styles from '../styles/Routines.module.css'
 import CardRoutine from './CardRoutine'
 import ImageRoutine from '../../../assets/3_b3a89075-032f-4ee9-af11-39dba5efa88c.webp'
+import { useGymStore } from '../../../store/store'
+import ButtonAdd from '../../../shared/buttons/components/ButtonAdd'
+import ModalAddRoutine from './ModalAddRoutine'
 
 export default function Routines() {
+	const {modal}=useGymStore()
+
 	return (
 		<section className={styles.container}>
+			{!modal && <ButtonAdd/>}
+			{modal && <ModalAddRoutine/>}
 			<h2>Mira las rutinas de los demás y usala en tu vida <span>fitness</span></h2>
 			<div className={styles.containerRoutines}>
 				<CardRoutine info={'Rutina para que tus biceps crezcan grandes y fuertes como el amor de mamá, cariño y compresión te quiero dar, tommy tipi'} img={ImageRoutine} exercises={'15'} routine={'Biceps'}/>	

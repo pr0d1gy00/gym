@@ -1,14 +1,16 @@
 .container{
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
+	height: 100%;
 	background-color: rgba(0, 0, 0, 0.7);
-	position: absolute;
-	top: 6rem;
+	position: fixed;
+	top: 0;
 	left: 0%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	z-index: 11;
 }
 .bodyModal{
 	display: flex;

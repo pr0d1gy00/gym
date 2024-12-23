@@ -46,4 +46,7 @@ span{
 		width:50rem;
 		
 	}
+	.container h2{
+		width: 100%;
+	}
 }

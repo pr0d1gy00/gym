@@ -59,7 +59,7 @@
 @media (width>768px) { 
 	.buttonAdd{
 		left: 90%;
-		top: 90%;
+		top: 80%;
 	}
 	.buttonFilter{
 		min-width: 20%;
