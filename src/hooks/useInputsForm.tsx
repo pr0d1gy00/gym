@@ -4,6 +4,7 @@ import MailIcon from '../assets/correo (1).webp'
 import UserIcon from '../assets/avatar.webp'
 import PasswordIcon from '../assets/candado.webp'
 import RoutineIcon from '../assets/rutina-de-ejercicio.webp'
+
 export type InputsFormProps={
 	id:string
 	name:string

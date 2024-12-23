@@ -23,11 +23,36 @@
 	align-items: center;
 	justify-content: center;
 }
+/**********  STYLES BUTTON FILTER POST *****************/
+
+.buttonFilter{
+	font-family: 'Raleway',sans-serif;
+	min-width: 40%;
+	width: 40%;
+	height: 6rem;
+	background-color:#f9f9f9;
+	border-radius: 1rem;
+	color: var(--primary);
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+}
 
 /**********  END STYLES BUTTON ADD ROUTINE *****************/
 @media (width>768px) { 
 	.buttonAddRoutine{
 		left: 90%;
 		top: 90%;
+	}
+	.buttonFilter{
+		min-width: 20%;
+		width: 20%;
+	}
+	.buttonFilter:hover{
+		
+		background-color: var(--primary);
+		color: var(--white);
 	}
 }

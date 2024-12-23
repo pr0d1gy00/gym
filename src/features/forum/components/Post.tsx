@@ -36,16 +36,19 @@ export default function Post({
 				<p className={styles.preview}>{preview}</p>
 				{showAnimation && <Like/>}
 				<div className={styles.likeContainer}>
-					<button title="like" 
-					onClick={()=>{
-						
-						setLike(!like)
-						setShowAnimation(!like) 
-					}}
-						className={styles.like}
-					>
-						<img src={like ? LikeFilledIcon : LikeIcon } alt="" />
-					</button>
+					<div>
+						<button title="like" 
+						onClick={()=>{
+							
+							setLike(!like)
+							setShowAnimation(!like) 
+						}}
+							className={styles.like}
+						>
+							<img src={like ? LikeFilledIcon : LikeIcon } alt="" />
+						</button>
+						<p>123k</p>
+					</div>
 					<p className={styles.replies}>replies {reply}</p>
 				</div>
 			</div>
