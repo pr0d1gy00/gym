@@ -41,7 +41,10 @@ export default function Header() {
 						<NavLink to={'login'}>
 							<button className={styles.buttonLogin}>Iniciar sesión</button>
 						</NavLink>
-						<button className={styles.buttonSignUp}>Registrarme</button>
+						<NavLink to={'register'}>
+							<button className={styles.buttonSignUp}>Registrarme</button>
+
+						</NavLink>
 					</div>
 				)
 			}

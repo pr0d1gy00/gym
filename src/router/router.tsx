@@ -9,8 +9,8 @@ export const router = createBrowserRouter([
 	{
 		element:<ContainerApp/>,
 		children:[
-			{path:'/',element:<LoginForm/>},
-			{path:'/routines',element:<RegisterForm/>},
+			{path:'/login',element:<LoginForm/>},
+			{path:'/register',element:<RegisterForm/>},
 			{path:'/forum',element:<Forum/>}
 		]
 	}
