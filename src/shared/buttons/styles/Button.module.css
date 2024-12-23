@@ -22,7 +22,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	scroll-behavior:smooth;
+	z-index: 1;
 }
 /**********  STYLES BUTTON FILTER POST *****************/
 
