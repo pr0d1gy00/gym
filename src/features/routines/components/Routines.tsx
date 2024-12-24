@@ -9,6 +9,7 @@ import { useButtons } from '../../../hooks/useButtons'
 import ButtonFIlter from '../../../shared/buttons/components/ButtonFIlter'
 import UserWithMoreLike from './UserWithMoreLike'
 import { useScreenSize } from '../../../hooks/useScreenSize'
+import ExercisesOfDay from './ExercisesOfDay'
 
 export default function Routines() {
 	const {modal}=useGymStore()
@@ -18,13 +19,10 @@ export default function Routines() {
 		<section className={styles.container}>
 			{!modal && <ButtonAdd/>}
 			{modal && <ModalAddRoutine/>}
-			{
-
-
-			}
-			{width > 1100 &&
+			{width > 1000 &&
 				<div className={styles.grid1}>	
 					<UserWithMoreLike/>
+					{ width <1599 && <ExercisesOfDay/>}
 				</div>
 			}
 			<div className={styles.grid2}>
@@ -45,11 +43,11 @@ export default function Routines() {
 					<CardRoutine info={'Rutina para que tu espalda, oooohh gran espalda crezcan grandes y fuertes como el amor de mamá, cariño y compresión te quiero dar, tommy tipi'} img={ImageRoutine} exercises={'4'} routine={'Back'} id={'4'}/>
 				</div>
 			</div>
-			<div>
-
-			</div>
-			
-			
+			{width > 1600 &&
+				<div className={styles.grid3}>
+					<ExercisesOfDay/>
+				</div>
+			}
 		</section>
 	)
 }
