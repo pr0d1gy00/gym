@@ -14,16 +14,24 @@ export default function Forum() {
 		<section className={styles.container}>
 			{!modal && <ButtonAdd/>}
 			{modal && <ModalAddRoutine/>} 
-			<h2>Comparte tus experiencias y ayuda a los demás en su vida <span>fitness</span></h2>
-			<FiltersPost>
-				{buttons.map(button=>
-					<ButtonFIlter title={button.title} id={button.id} key={button.id} text={button.text} type={button.type}/>
-				)}
-			</FiltersPost>
-			<section className={styles.postList}>
-				<Post title={'COmo puedo mejorar en mi ejercicio'} image={PerfilIcon} preview={'Llevo tiempo intentando mejorar en este ejercicio para conseguir ganas pero no lo logro '} user={'manquito3'} reply={'6'} id={'1'} />
-				<Post title={'COmo puedo mejorar en mi ejercicio'} image={PerfilIcon} preview={'Llevo tiempo intentando mejorar en este ejercicio para conseguir ganas pero no lo logro '} user={'manquito3'} reply={'6'} id={'2'} />
-			</section>
+			<div className={styles.grid1}>
+
+			</div>
+			<div className={styles.grid2}>
+				<h2>Comparte tus experiencias y ayuda a los demás en su vida <span>fitness</span></h2>
+				<FiltersPost>
+					{buttons.map(button=>
+						<ButtonFIlter title={button.title} id={button.id} key={button.id} text={button.text} type={button.type}/>
+					)}
+				</FiltersPost>
+				<section className={styles.postList}>
+					<Post title={'COmo puedo mejorar en mi ejercicio'} image={PerfilIcon} preview={'Llevo tiempo intentando mejorar en este ejercicio para conseguir ganas pero no lo logro '} user={'manquito3'} reply={'6'} id={'1'} />
+					<Post title={'COmo puedo mejorar en mi ejercicio'} image={PerfilIcon} preview={'Llevo tiempo intentando mejorar en este ejercicio para conseguir ganas pero no lo logro '} user={'manquito3'} reply={'6'} id={'2'} />
+				</section>
+			</div>
+			<div className={styles.grid3}>
+
+			</div>
 
 		</section>
 	)
