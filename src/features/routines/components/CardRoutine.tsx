@@ -15,6 +15,7 @@ type CardRoutineProps = {
 	img: string;
 	exercises: string;
 	routine: string;
+	id:string
 };
 
 export default function CardRoutine({
@@ -22,6 +23,7 @@ export default function CardRoutine({
 	img,
 	exercises,
 	routine,
+	id
 }: CardRoutineProps) {
 	const [like, setLike]=useState(false)
 	const [showAnimation,setShowAnimation]=useState(false)
@@ -30,7 +32,7 @@ export default function CardRoutine({
 		setTimeout(()=>setShowAnimation(false),2000)
 	},[showAnimation])
 	return (
-		<a className={styles.card}>
+		<a className={styles.card} key={id}>
 			<div className={styles.cardImage}>
 				<div className={styles.cardGradient}></div>
 				

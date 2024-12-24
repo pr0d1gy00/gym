@@ -3,7 +3,6 @@ import AddIcon from '../../../assets/agregar.png'
 import { useGymStore } from '../../../store/store'
 export default function ButtonAdd() {
 	const {showModal}=useGymStore()
-	console.log(navigator.userAgent)
 	return (
 		<button className={styles.buttonAdd} onClick={()=>showModal()}>
 			<img src={AddIcon} alt="add" />

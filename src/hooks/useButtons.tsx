@@ -39,10 +39,51 @@ const allPost:useButtonsProps={
 	title:'allPost',
 	id:'allPost'
 }
-
+const biceps:useButtonsProps={
+	text:'Biceps',
+	type:'button',
+	title:'biceps',
+	id:'biceps'
+}
+const triceps:useButtonsProps={
+	text:'Triceps',
+	type:'button',
+	title:'triceps',
+	id:'triceps'
+}
+const shoulder:useButtonsProps={
+	text:'Shoulder',
+	type:'button',
+	title:'shoulder',
+	id:'shoulder'
+}
+const back:useButtonsProps={
+	text:'Back',
+	type:'button',
+	title:'back',
+	id:'back'
+}
+const allExercises:useButtonsProps={
+	text:'All Exercises',
+	type:'button',
+	title:'allExercises',
+	id:'allExercises'
+}
+const buttocks:useButtonsProps={
+	text:'Buttocks',
+	type:'button',
+	title:'buttocks',
+	id:'buttocks'
+}
+const legs:useButtonsProps={
+	text:'Legs',
+	type:'button',
+	title:'legs',
+	id:'legs'
+}
 export const useButtons=()=>{
 	const [buttons,setButtons]=useState<useButtonsProps[]>([])
-
+	const [buttonRoutines,setButtonsRoutines]=useState<useButtonsProps[]>([])
 	useEffect(()=>{
 		setButtons(()=>[
 			moreLike,
@@ -51,9 +92,19 @@ export const useButtons=()=>{
 			lessPopular,
 			allPost
 		])
+		setButtonsRoutines(()=>[
+			allExercises,
+			biceps,
+			triceps,
+			legs,
+			buttocks,
+			shoulder,
+			back
+		])
 	},[])
 
 	return {
-		buttons
+		buttons,
+		buttonRoutines
 	}
 }

@@ -9,6 +9,7 @@ type PostProps = {
 	preview: string;
 	user: string;
 	reply: string;
+	id:string
 };
 
 export default function Post({
@@ -17,6 +18,7 @@ export default function Post({
 	preview,
 	user,
 	reply,
+	id
 }: PostProps) {
 	const [like, setLike]=useState(false)
 	const [showAnimation,setShowAnimation]=useState(false)
@@ -25,7 +27,7 @@ export default function Post({
 		setTimeout(()=>setShowAnimation(false),2000)
 	},[showAnimation])
 	return (
-		<div className={styles.post}>
+		<div className={styles.post} key={id}>
 			<div className={styles.image}>
 				<img src={image} alt={user} />
 			</div>
